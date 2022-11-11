@@ -4,14 +4,14 @@ import { Recipients } from "./Recipients.js"
 
 export const PenPals = () => { 
     return `
-    <h1>Pen Pal Society</h1>
-        <section class="body_container">
+    <div class="container">
+        <h1>Pen Pal Society</h1>
             <section class="authors">
-            <h2>Author</h2>
-                    ${Authors()}
+                <h2>Author</h2>
+                        ${Authors()}
             </section>
 
-            <section class="letter">
+            <section class="letter_text">
                 <h2>Letter</h2>
                     <textarea></textarea>
             </section>
@@ -21,12 +21,18 @@ export const PenPals = () => {
                 ${Topics()}
             </section>
 
-            <section class="recipient">
-                <h2>Recipient</h2>
-                ${Recipients()}
-            </section>
-            </section>
+                <section class="recipient">
+                    <h2>Recipient</h2>
+                    ${Recipients()}
+                </section>
+
+
             <button class="sendletter">Send Letter</button>
+
+            <div class="letter_save">
+                <h2>Letters</h2>
+            </div>
+        </div>
 
       
             `

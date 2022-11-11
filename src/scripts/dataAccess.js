@@ -46,3 +46,20 @@ export const fetchRecipients = () => {
 export const getRecipients = () => { 
     return transientState.recipients.map(recipient => ({...recipient}))
 }
+
+
+
+
+/* function that will save letter & send to API */
+export const saveLetter = () => { 
+
+    // POST request 
+
+}
+
+/* function that will delete letter */
+export const deleteLetter = () => { 
+
+     // DELETE request
+     // need id value because we can only delete singular resources
+}
