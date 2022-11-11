@@ -9,7 +9,7 @@ export const Recipients = () => {
         <option value="recipients">Choose Recipient...</option>
         ${recipients.map(recipient => { 
             return `
-            <option value="${recipient.id}>${recipient.name}</option>`
+            <option value="${recipient.id}">${recipient.name}</option>`
         }).join("")}
     
     </select> `

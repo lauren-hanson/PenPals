@@ -6,13 +6,13 @@ export const Topics = () => {
 
     let html = "<ul>"
 
-    for (const topic of topics) {
-        return `<li>
-        <input type="radio" id="topic" name="topic" value="topic">
-        <label for="topic">${topic.name}</label></li>`
+       html += `${topics.map(topic => {
+            return `<input type="radio" id="topic" name="topic" value="topic">
+            <label for="topic">${topic.type}</label>`
+        }).join("")}`
+        
+        html += `</ul>`
+    
+        return html
     }
     
-    html += `</ul>`
-
-    return html
-}
