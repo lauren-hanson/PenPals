@@ -7,7 +7,9 @@ export const Topics = () => {
     let html = "<ul>"
 
     for (const topic of topics) {
-        return `<li>${topic.name}</li>`
+        return `<li>
+        <input type="radio" id="topic" name="topic" value="topic">
+        <label for="topic">${topic.name}</label></li>`
     }
     
     html += `</ul>`
