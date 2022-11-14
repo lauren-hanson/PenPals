@@ -1,8 +1,5 @@
 const transientState = { 
-    authors: [], 
-    recipients: [], 
-    topics: [], 
-    sentLetters: [] 
+
 
 }
 
@@ -48,18 +45,49 @@ export const getRecipients = () => {
 }
 
 
+/* function that will collect all the data & convert from transient => permanent state stored in API */ 
+export const saveLetter = (letterObj) => { 
+
+    const fetchOptions = { 
+        method: "POST", 
+        headers: { 
+            "Content-Type": "application/json"
+        }, 
+        body: JSON.stringify(letterObj)
+    }
+
+    return fetch(`${API}/finishedLetters`, fetchOptions)
+        .then(response => response.json())
+        .then(() => { 
+            mainContainer.dispatchEvent(new CustomEvent())
+        })
+
+}
+
+/* function that will fetch letters from API */
+export const fetchLetter = () => { 
+    return fetch(`${API}/letters`)
+    .then(response => response.json())
+    .then(
+        (completeLetter) => { 
+            transientState.letters = completeLetter
+        }
+    )
+}
 
 
 /* function that will save letter & send to API */
-export const saveLetter = () => { 
+export const sendLetter = () => { 
 
     // POST request 
 
 }
 
-/* function that will delete letter */
+/*
+// function that will delete letter 
 export const deleteLetter = () => { 
 
      // DELETE request
      // need id value because we can only delete singular resources
 }
+*/ 

@@ -7,7 +7,7 @@ export const Authors = () => {
     
     return `
         <select class="author">
-            <option value="clowns">Choose Author...</option>
+            <option class="chooseauthor" value="clowns">Choose Author...</option>
             ${authors.map(
                 author => { 
                     return `<option value="${author.id}">${author.name}</option>`

@@ -1,21 +1,65 @@
-.container { 
+body {
+    color: #251a11;
+    background-image: url("https://i.pinimg.com/originals/df/82/cf/df82cfcf106927d9efe83e3a3f84c095.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+.container {
     font-family: 'La Belle Aurore', cursive;
-    width: 50%; 
-    padding: 20px; 
-    color: #472d30; 
-    margin: 20px; 
-}
-
-.container, .authors, .letter_text, .topics, .recipient, .letter_save { 
-    border: 1px solid #723d46; 
-    padding: 20px; 
-    margin: 10px; 
-}
-
-.body_container { 
-    display: flex; 
-   flex-direction: column;
-    align-content: stretch; 
-
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    opacity: 85%;
+    border: 2px solid #e2cbb5;
+    background-color: #fee9d3;
+    padding: 25px 50px;
+    margin: 50px 0px;
 
 }
+
+
+
+h1 {
+    color: #251a11;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    margin: 10px 0px;
+   
+
+}
+
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 1px;
+}
+
+
+.topic {
+    display: inline-flex;
+    flex-direction: row;
+      
+}
+
+
+.sendletter {
+    width: 100px;
+    font-family: 'La Belle Aurore', cursive;
+    margin-top: 30px;
+    padding: 5px 2px;
+}
+
+
+/* .authors, .letter_text, .topics, .recipient, .letter_save { 
+     
+} */
