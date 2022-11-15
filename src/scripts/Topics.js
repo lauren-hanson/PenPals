@@ -1,4 +1,4 @@
-import { getTopics } from "./dataAccess.js"
+import { getTopics, setTopics } from "./dataAccess.js"
 
 export const Topics = () => { 
 
@@ -9,7 +9,7 @@ export const Topics = () => {
        html += `${topics.map(topic => {
             return `
             <div class="topic">
-            <input type="radio" id="topic" name="topic" value="topic">
+            <input type="radio" id="topic" name="topic" value="1">
             <label
             for="topic">${topic.type}</label>
             </div>`
@@ -20,3 +20,17 @@ export const Topics = () => {
         return html
     }
     
+    const mainContainer = document.querySelector("#container")
+
+    mainContainer.addEventListener(
+        "click",
+        event => {
+            if (event.target.name === "topic") {
+
+                setTopics(parseInt(event.target.value))
+               
+            }
+
+    
+        }
+    )

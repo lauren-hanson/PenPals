@@ -1,11 +1,13 @@
 
-import { fetchAuthors, fetchRecipients, fetchTopics } from "./dataAccess.js"
+import { fetchAuthors, fetchRecipients, fetchTopics, fetchLetters } from "./dataAccess.js"
 import {PenPals} from "./PenPals.js"
+
 
 const mainContainer = document.querySelector("#container")
 
 const render = () => {
-        fetchAuthors()
+        fetchLetters() 
+                .then(() => fetchAuthors())
                 .then(() => fetchRecipients())
                 .then(() => fetchTopics())
                 .then(() => { 
@@ -14,5 +16,10 @@ const render = () => {
                 })
        
 }
+
+mainContainer.addEventListener("stateChanged", 
+(event) => { 
+    render()
+})
 
 render()
