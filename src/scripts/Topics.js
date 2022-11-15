@@ -9,7 +9,7 @@ export const Topics = () => {
        html += `${topics.map(topic => {
             return `
             <div class="topic">
-            <input type="radio" id="topic" name="topic" value="1">
+            <input type="radio" id="${topic.id}" name="topic" value="1">
             <label
             for="topic">${topic.type}</label>
             </div>`
@@ -23,11 +23,11 @@ export const Topics = () => {
     const mainContainer = document.querySelector("#container")
 
     mainContainer.addEventListener(
-        "click",
+        "change",
         event => {
             if (event.target.name === "topic") {
 
-                setTopics(parseInt(event.target.value))
+                setTopics(parseInt(event.target.id))
                
             }
 

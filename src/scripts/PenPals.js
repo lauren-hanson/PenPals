@@ -16,7 +16,7 @@ export const PenPals = () => {
 
             <section class="letter_text">
                 <h2>Letter</h2>
-                <textarea id="textArea" class="input" name="letter" rows="15" cols="60" placeholder="Dear... ">
+                <textarea id="textArea" class="input" name="letter" rows="15" cols="80" placeholder="Dear... ">
                 </textarea>
             </section>
 
@@ -29,13 +29,13 @@ export const PenPals = () => {
             <h2>Recipient</h2>
             ${Recipients()}
             </section>
-            
+           
             <div class="letterSubmission">
             ${Letter()}
             </div>
-
+            </div> 
             
-    </div>`
+    `
                         
 }
 

@@ -101,7 +101,7 @@ export const sendLetter = (obj) => {
     return fetch(`${API}/letters`, fetchOptions)
         .then(response => response.json())
         .then((data) => {
-            mainContainer.dispatchEvent(new CustomEvent("data"))
+            mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
         })
 
 
