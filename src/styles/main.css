@@ -2,8 +2,7 @@ body {
     color: #251a11;
     background-image: url("https://i.pinimg.com/originals/df/82/cf/df82cfcf106927d9efe83e3a3f84c095.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat-y;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +21,8 @@ body {
     border: 2px solid #e2cbb5;
     background-color: #fee9d3;
     padding: 25px 50px;
-    margin: 50px 0px;
+    margin: 100px;
+   
 
 }
 
@@ -32,7 +32,7 @@ h1 {
     color: #251a11;
     text-align: center;
     text-decoration: underline;
-    font-size: 50px;
+    font-size: 100px;
     margin: 10px 0px;
    
 
@@ -40,7 +40,7 @@ h1 {
 
 
 h2 {
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 1px;
 }
 
@@ -48,6 +48,7 @@ h2 {
 .topic {
     display: inline-flex;
     flex-direction: row;
+    font-size: 25px; 
       
 }
 
@@ -55,11 +56,28 @@ h2 {
 .sendletter {
     width: 100px;
     font-family: 'La Belle Aurore', cursive;
-    margin-top: 30px;
-    padding: 5px 2px;
+    margin-top: 50px;
+    padding: 7px 5px;
+    font-size: 20px; 
 }
 
 
-/* .authors, .letter_text, .topics, .recipient, .letter_save { 
-     
-} */
+.printletter { 
+    font-family: 'La Belle Aurore', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
+    align-items: flex-start;
+    opacity: 85%;
+    border: 2px solid #e2cbb5;
+    background-color: #fef6ee;
+    padding: 40px 30px 10px 30px; 
+    margin: 20px; 
+    font-size: 20px; 
+}
+
+.letterTopic { 
+    border: 2px solid #e2cbb5; 
+    padding: 5px 20px; 
+}
