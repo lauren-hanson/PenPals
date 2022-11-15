@@ -1,12 +1,14 @@
 import { Authors } from "./Authors.js"
 import { Topics } from "./Topics.js"
 import { Recipients } from "./Recipients.js"
+import { Letter } from "./SendLetter.js"
+
+
 
 export const PenPals = () => { 
     return `
     <div class="container">
         <h1>Pen Pal Society</h1>
-       
             <section class="authors">
                 <h2>Author</h2>
                 ${Authors()}
@@ -14,7 +16,8 @@ export const PenPals = () => {
 
             <section class="letter_text">
                 <h2>Letter</h2>
-                    <textarea></textarea>
+                <textarea id="textArea" class="input" name="letter" rows="15" cols="60" placeholder="Dear... ">
+                </textarea>
             </section>
 
             <section class="topics">
@@ -23,12 +26,25 @@ export const PenPals = () => {
             </section>
 
             <section class="recipient">
-                 <h2>Recipient</h2>
-                ${Recipients()}
+            <h2>Recipient</h2>
+            ${Recipients()}
             </section>
+            
+            <div class="letterSubmission">
+            ${Letter()}
+            </div>
 
-
-            <button class="sendletter">Send Letter</button>
+            
     </div>`
-
+                        
 }
+
+
+
+
+
+
+
+
+
+

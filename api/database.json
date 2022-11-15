@@ -1,36 +1,76 @@
 {
   "authors": [
-    {"id": 1, "name": "Steve", "email": "steve@gmail.com"},
-    {"id": 2, "name": "Hopper", "email": "jim@gmail.com"},
-    {"id": 3, "name": "Robin", "email": "robin@gmail.com"}
+    {
+      "id": 1,
+      "name": "Jane",
+      "email": "jane@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Elizabeth",
+      "email": "elizabeth@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Mr. Collins",
+      "email": "collins@gmail.com"
+    }
   ],
   "recipients": [
-    {"id": 1, "name": "Max", "email": "max@gmail.com"}, 
-    {"id": 2, "name": "Lucas", "email": "lucas@gmail.com"},
-    {"id": 3, "name": "Argyle", "email": "argyle@gmail.com"}
+    {
+      "id": 1,
+      "name": "Darcy",
+      "email": "darcy@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Mr. Bingley",
+      "email": "charles@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Lydia",
+      "email": "lydia@gmail.com"
+    }
   ],
   "topics": [
-    {"id": 1, "type": "Horror"},
-    {"id": 2, "type": "Supernatural"},
-    {"id": 3, "type": "Timid"},
-    {"id": 4, "type": "Overwhelmed"},
-    {"id": 5, "type": "Chaos"}
-  ],
-  "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "type": "Romance"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "type": "Comedy"
+    },
+    {
+      "id": 3,
+      "type": "Integrity"
+    },
+    {
+      "id": 4,
+      "type": "Elegant"
+    },
+    {
+      "id": 5,
+      "type": "Generosity"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "letters": [
+    {
+      "authorId": 1,
+      "topicId": 1,
+      "recipientId": 1,
+      "letterContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                ",
+      "date_created": 1668543114032,
+      "id": 1
+    },
+    {
+      "authorId": 1,
+      "topicId": 1,
+      "recipientId": 2,
+      "letterContent": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.               ",
+      "date_created": 1668546365515,
+      "id": 2
+    }
+  ]
 }
